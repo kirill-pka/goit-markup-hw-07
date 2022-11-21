@@ -1,0 +1,40 @@
+.soft-skills {
+    @extend %section;
+}
+
+.soft-skills__item {
+    display: flex;
+    gap: 30px;
+    
+}
+
+.soft-skills__list {
+    flex-basis: calc((100% * 3) / 4);
+}
+
+.soft-skill__icon {
+    padding: 25px 100px;
+    margin-bottom: 30px;
+
+    flex-basis: calc((100% * 3) / 4);
+    background-color: var(--corol-button);
+}
+
+.soft-skills__peculiarities-title {
+    margin-bottom: 10px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-color)
+}
+
+.soft-skills__peculiarities-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    color: var(--second-color)
+}

@@ -31,3 +31,18 @@ https://ru.bem.info/methodology/quick-start/
 
 <!-- Рандомные фото -->
 https://picsum.photos/
+
+
+<!-- Переменные -->
+%section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+@extend %section;
+
+
+%mixins section (pt, pb){
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+@include

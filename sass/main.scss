@@ -1,0 +1,30 @@
+// utils style
+
+@import './utils/variables';
+@import './utils/v-hidden';
+@import './utils/placeholders';
+@import './utils/is-hidden.scss';
+
+// layout
+@import './components/header';
+@import './components/footer';
+@import './components/footer-form';
+@import './components/logo';
+@import './components/footer';
+
+// base style
+@import './base/base';
+@import './base/reset';
+
+// components style
+@import './components/container';
+@import './components/hero';
+@import './components/bottons';
+@import './components/soft-skill';
+@import './components/services';
+@import './components/team';
+@import './components/clients';
+@import './components/feature';
+@import './components/modal';
+@import './components/modal-form';
+
