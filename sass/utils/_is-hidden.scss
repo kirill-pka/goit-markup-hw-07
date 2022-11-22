@@ -3,3 +3,8 @@
     visibility: hidden;
     pointer-events: none;
 }
+
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -120%);
+
+}

@@ -1,8 +1,10 @@
-.taem {
+.team {
+    @extend %section;
+
     background-color: var(--corol-button);
 }
 
-.section-title-taem {
+.team__title {
     margin-bottom: 50px;
     
     font-weight: 700;
@@ -13,7 +15,13 @@
     text-align: center;
 }
 
-.team-item {
+.team-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.team-card__item {
     flex-basis: calc((100% - 30px * 3) / 4);
 
     background-color: var(--White-color);
@@ -21,11 +29,37 @@
     border-radius: 0px 0px 4px 4px;
 }
 
-.section-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+.team-card__list {
+    padding: 30px 10px 0;
 }
+
+.team-card__name {
+    padding-bottom: 10px;
+
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--main-color);
+    white-space: nowrap;
+}
+
+.team-card__position {
+    padding-bottom: 16px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--second-color);
+
+}
+
+// Social-Team
+
 .social {
     padding-bottom: 30px;
 
@@ -35,7 +69,7 @@
     gap: 10px;
 }
 
-.social-link {
+.social__link {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -53,44 +87,13 @@
 
 
 
-.social-icon {
+.social__icon {
     fill: var(--client);
 
     transition: fill var(--trns-anim);
 
-    .social-link:hover &,
-    .social-link:focus & {
+    .social__link:hover &,
+    .social__link:focus & {
     fill: var(--White-color);
 } 
-}
-
-
-
-.about-team {
-    padding-bottom: 10px;
-
-    text-transform: capitalize;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: calc(19 / 16);
-    letter-spacing: 0.03em;
-    text-align: center;
-    color: var(--main-color);
-    white-space: nowrap;
-}
-
-.about-position {
-    padding-bottom: 16px;
-
-    font-weight: 400;
-    font-size: 16px;
-    line-height: calc(19 / 16);
-    letter-spacing: 0.03em;
-    text-align: center;
-    color: var(--second-color);
-
-}
-
-.section-team-list {
-    padding: 30px 10px 0;
 }
