@@ -23,14 +23,14 @@
     width: 100%;
 }
 
-.form-field {
-    display: block;
+.form-field:not(:last-child) {
+    margin-bottom: 10px;
 
+    display: block;
 
 }
 
 .form-label {
-
     top: 0;
     left: 0;
 
@@ -98,12 +98,12 @@
 }
 }
 
-.form-control:not(:last-child) {
-    margin-bottom: 10px;
+// .form-control:not(:last-child) {
+//     margin-bottom: 10px;
 
-    display: block;
-    position: relative;
-}
+//     display: block;
+//     position: relative;
+// }
 
 .form-icon {
     position: absolute;

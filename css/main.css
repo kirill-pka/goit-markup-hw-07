@@ -920,7 +920,8 @@ button {
   width: 100%;
 }
 
-.form-field {
+.form-field:not(:last-child) {
+  margin-bottom: 10px;
   display: block;
 }
 
@@ -974,12 +975,6 @@ button {
 .form-message:hover, .form-message:focus {
   outline: transparent;
   border: 1px solid var(--change-color);
-}
-
-.form-control:not(:last-child) {
-  margin-bottom: 10px;
-  display: block;
-  position: relative;
 }
 
 .form-icon {
